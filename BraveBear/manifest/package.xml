@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <!-- Apex Classes -->
+    <types>
+        <members>OMSQueueCallingController</members>
+        <members>OrderProcessingController</members>
+        <members>OrderProcessingControllerTest</members>
+        <members>OrderQueue</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Custom Objects -->
+    <types>
+        <members>Order__c</members>
+        <members>Order_Line_Item__c</members>
+                <members>Products__c</members>
+
+        <name>CustomObject</name>
+    </types>
+
+    <!-- Custom Metadata -->
+   <types>
+    <members>Customer_Tiers__mdt</members> <!-- type definition -->
+    <members>Customer_Tiers__mdt.Gold</members> <!-- record -->
+    <members>Customer_Tiers__mdt.Silver</members> <!-- record -->
+    <members>Customer_Tiers__mdt.Platinum</members> <!-- record -->
+    <members>Customer_Tiers__mdt.Standard</members>
+    <name>CustomMetadata</name>
+</types>
+
+    <types>
+     <members>CSA_Permission</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Flow -->
+    <types>
+        <members>Order_Mgt_System</members> <!-- update with your Flow's API Name -->
+        <name>Flow</name>
+    </types>
+
+    <!-- Named Credential -->
+    <types>
+        <members>ExternalInventoryAPI</members>
+        <name>NamedCredential</name>
+    </types>
+
+    <!-- Custom Application -->
+    <types>
+        <members>Order_Mgt_System</members> <!-- update with your App Name -->
+        <name>CustomApplication</name>
+    </types>
+
+    <!-- Fields (optional: if you're deploying fields separately) -->
+    <!--
+    <types>
+        <members>Order__c.Total_Amount__c</members>
+        <members>Order__c.Final_Amount__c</members>
+        <members>Order__c.Discount__c</members>
+        <members>Order__c.Rush_Delivery__c</members>
+        <members>Order__c.Rush_Surcharge__c</members>
+        <members>Order_Line_Item__c.Final_Amount__c</members>
+        <members>Order_Line_Item__c.Discount__c</members>
+        <name>CustomField</name>
+    </types>
+    -->
+
+    <version>59.0</version>
+</Package>
