@@ -15,8 +15,10 @@
             </value>
         </inputParameters>
         <nameSegment>OMSQueueCallingController</nameSegment>
+        <offset>0</offset>
     </actionCalls>
     <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <environments>Default</environments>
     <interviewLabel>Order Mgt System {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Order Mgt System</label>
@@ -65,4 +67,11 @@
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
+    <variables>
+        <name>OrderIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
 </Flow>
