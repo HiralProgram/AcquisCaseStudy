@@ -153,7 +153,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Order</label>
+    <label>Orders</label>
     <nameField>
         <displayFormat>O-{000000}</displayFormat>
         <label>Order</label>

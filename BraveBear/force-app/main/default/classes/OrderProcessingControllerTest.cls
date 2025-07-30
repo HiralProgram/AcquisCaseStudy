@@ -35,12 +35,10 @@ global class OrderProcessingControllerTest {
  
     global class InventoryApiMock implements HttpCalloutMock {
         global HTTPResponse respond(HTTPRequest req) {
-            // Create a fake HTTP response
             HttpResponse res = new HttpResponse();
             res.setHeader('Content-Type', 'application/json');
             res.setStatusCode(200);
             
-            // Mock JSON response body (you can customize per test)
             String body = '{"productId":"P1001","requestedQty":10,"availableQty":5,"isAvailable":false}';
             res.setBody(body);
             
